@@ -55,6 +55,12 @@
     background-color: #248264;
 }
 
+.debug .container nav ul li{
+    width: 100px;
+    margin: 5px;
+    background-color: #FFF;
+} 
+
 /* UTILITIES */
 
 .d_flex{
@@ -93,6 +99,15 @@
     flex-direction: column;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+.txt_center{
+    text-align: center;
+}
+
 .p_fixed{
     position: fixed;
 }
@@ -103,6 +118,10 @@
 
 .d_none{
     display: none;
+}
+
+nav ul{
+    list-style-type: none;
 }
 
 /* RULES */
