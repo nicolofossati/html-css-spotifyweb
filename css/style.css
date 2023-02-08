@@ -4,3 +4,54 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* COLORS */
+:root{
+    --black: #000;
+    --white: #FFF;
+    --dark_blue: #141922;
+    --light_grey: #D2D2D2;
+    --grey: #65686D;
+    --dark_grey: #282828;
+}
+
+/* DEBUG */
+
+.debug main{
+    background-color: #65686D;
+}
+
+.debug footer{
+    background-color: #000;
+}
+
+.debug aside{
+    background-color: #FFF;
+}
+
+.debug .content{
+    background-color: antiquewhite;
+}
+
+/* UTILITIES */
+
+.d_flex{
+    display: flex;
+}
+
+/* RULES */
+main{
+    height: calc(100vh - 100px);
+}
+
+footer{
+    height: 100px;
+}
+
+aside{
+    width: 70px;
+}
+
+.content{
+    width: calc(100% - 70px);
+}
