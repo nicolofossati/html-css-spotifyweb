@@ -49,6 +49,12 @@
     height: 100px;
 }
 
+.debug .bttn{
+    width: 300px;
+    height:  30px;
+    background-color: #248264;
+}
+
 /* UTILITIES */
 
 .d_flex{
@@ -61,6 +67,22 @@
 
 .sp_between_jc{
     justify-content: space-between;
+}
+
+.center_ai{
+    align-items: center;
+}
+
+.center_jc{
+    justify-content: center;
+}
+
+.f_end_jc{
+    justify-content: flex-end;
+}
+
+.f_end_ai{
+    align-items: flex-end;
 }
 
 .f_row{
