@@ -75,6 +75,10 @@
     background-color: #248264;
 }
 
+.debug #popolar .cover{
+    border-radius: 50%;
+}
+
 /* UTILITIES */
 
 .d_flex{
