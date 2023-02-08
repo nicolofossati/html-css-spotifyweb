@@ -59,16 +59,10 @@
     width: 100px;
     margin: 5px;
     background-color: #FFF;
-} 
-
-.debug .prova{
-    height: 1000px;
-    width: 300px;
-    background-color: blueviolet;
 }
 
 .debug .card{
-    background-color: #65686D;
+   /* background-color: #65686D;*/
 }
 
 .debug .cover{
@@ -79,7 +73,21 @@
     border-radius: 50%;
 }
 
+.debug footer div{
+    width: 100px;
+    background-color: #D2D2D2;
+}
+
+.debug .footer_left{
+    
+}
+
 /* UTILITIES */
+
+.white{
+    color: var(--white);
+}
+
 
 .d_flex{
     display: flex;
@@ -143,6 +151,10 @@ nav ul{
 }
 
 /* RULES */
+::-webkit-scrollbar{
+    display: none;
+}
+
 main{
     height: calc(100vh - 100px);
 }
@@ -183,7 +195,6 @@ aside{
     width: 100%;
     aspect-ratio: 1/1;
 }
-
 
 
 /* MEDIA QUERY */
