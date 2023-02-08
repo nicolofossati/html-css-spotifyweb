@@ -17,29 +17,36 @@
 
 /* DEBUG */
 
-.debug main{
-    background-color: #65686D;
-}
 
 .debug footer{
-    background-color: #000;
+    background-color: #282828;
 }
 
 .debug aside{
-    background-color: #FFF;
+    background-color: #000;
 }
-
-.debug .container{
-    background-color: antiquewhite;
-}
-
 
 .debug .cta{
-    background-color: #65686D;
+    background-color: grey/*#0000007a*/;
 }
 
 .debug .content{
     background-color: #141922;
+}
+
+.debug aside nav ul li{
+    height: 30px;
+    background-color: #FFF;
+}
+
+.debug .aside_bottom div{
+    height: 30px;
+    background-color: #FFF;
+}
+
+.debug .aside_playlist{
+    background-color: aqua;
+    height: 100px;
 }
 
 /* UTILITIES */
@@ -48,12 +55,32 @@
     display: flex;
 }
 
+.sp_between_ai{
+    align-items: space-between;
+}
+
+.sp_between_jc{
+    justify-content: space-between;
+}
+
+.f_row{
+    flex-direction: row;
+}
+
+.f_column{
+    flex-direction: column;
+}
+
 .p_fixed{
-    position: fixed;;
+    position: fixed;
 }
 
 .overflow_scroll{
     overflow-y: scroll;
+}
+
+.d_none{
+    display: none;
 }
 
 /* RULES */
@@ -79,9 +106,10 @@ aside{
 }
 
 .content{
-    height: calc(100vh - 100px - 100px);
-    margin-top: 100px;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
 }
+
 
 
 /* MEDIA QUERY */
@@ -91,6 +119,15 @@ aside{
     aside{
         width: 300px;
     }
+
+    aside li .d_none, .aside_bottom .d_none{
+        display: inline-block;
+    }
+
+    .d_none{
+        display: block;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
