@@ -61,6 +61,20 @@
     background-color: #FFF;
 } 
 
+.debug .prova{
+    height: 1000px;
+    width: 300px;
+    background-color: blueviolet;
+}
+
+.debug .card{
+    background-color: #65686D;
+}
+
+.debug .cover{
+    background-color: #248264;
+}
+
 /* UTILITIES */
 
 .d_flex{
@@ -151,6 +165,21 @@ aside{
     padding-top: 100px;
 }
 
+.margin_content{
+    margin: 0 10px;
+}
+
+
+.card {
+    width: 50%;
+    padding: 10px;
+}
+
+.cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
 
 
 /* MEDIA QUERY */
@@ -172,7 +201,9 @@ aside{
 }
 
 @media screen and (min-width: 768px) {
-    
+    .card {
+        width: 25%;
+    }
 }
 @media screen and (min-width: 992px) {
     
