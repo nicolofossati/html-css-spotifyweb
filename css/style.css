@@ -34,21 +34,6 @@
     background-color: #141922;
 }
 
-.debug aside nav ul li{
-    height: 30px;
-    background-color: #FFF;
-}
-
-.debug .aside_bottom div{
-    height: 30px;
-    /*background-color: #FFF;*/
-}
-
-.debug .aside_playlist{
-    background-color: aqua;
-    height: 100px;
-}
-
 .debug .bttn{
     width: 300px;
     height:  30px;
@@ -221,6 +206,8 @@ footer{
 
 /*  ASIDE RULES  */
 
+
+
 aside{
     width: 70px;
     overflow-y: hidden;
@@ -229,22 +216,15 @@ aside{
 .aside_top{
     height: calc(100% - 80px);
     min-height: 400px;
-    overflow-y: hidden;
 }
 
 .aside_bottom{
     height: 80px;
 }
 
-.playlist_container{
-    overflow-y: scroll;
+.d_none_playlist > *{
+    display: none;
 }
-
-.playlist_aside{
-    overflow-y: hidden;
-}
-
-
 
 /* MEDIA QUERY */
 
@@ -254,14 +234,27 @@ aside{
         width: 300px;
     }
 
-    aside li .d_none, .aside_bottom .d_none{
+    .d_none{
         display: inline-block;
     }
 
-    .d_none{
+    .d_none_playlist > *{
         display: block;
     }
 
+    
+    .aside_top{
+        overflow-y: hidden;
+    }
+    
+    
+    .playlist_container{
+        overflow-y: scroll;
+    }
+    
+    .playlist_aside{
+        overflow-y: hidden;
+    }
 }
 
 @media screen and (min-width: 768px) {
