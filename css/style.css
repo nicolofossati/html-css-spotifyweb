@@ -231,12 +231,12 @@ aside{
 }
 
 .aside_top{
-    height: calc(100% - 90px);
+    height: calc(100% - 60px);
     min-height: 400px;
 }
 
 .aside_bottom{
-    height: 90px;
+    height: 60px;
 }
 
 .aside_bottom div:first-child img{
@@ -283,12 +283,17 @@ aside{
         display: block;
     }
 
-    
     .aside_top{
         overflow-y: hidden;
         padding-top: 15px;
         padding-left: 15px;
-    }    
+        height: calc(100% - 90px);
+    } 
+
+    .aside_bottom{
+        height: 90px;
+        padding: 5px 15px;
+    }  
     
     .playlist_container{
         overflow-y: scroll;
@@ -306,26 +311,22 @@ aside{
         text-align: unset;
     }
 
-.aside_bottom div:first-child {
-    border-bottom: 2px grey solid;
-}
-    
-.aside_bottom > div:first-child {
-    padding-bottom: 10px;
-}
+    .aside_bottom div:first-child {
+        border-bottom: 2px grey solid;
+    }
+        
+    .aside_bottom > div:first-child {
+        padding-bottom: 10px;
+    }
 
-.aside_bottom > div:last-child {
-    padding-top: 10px;
-}
+    .aside_bottom > div:last-child {
+        padding-top: 10px;
+    }
 
-.center_img_txt > * { /* Per centrare verticalmente img e testo a fianco*/
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.aside_bottom{
-    padding: 5px 15px;
-}
+    .center_img_txt > * { /* Per centrare verticalmente img e testo a fianco*/
+        display: inline-block;
+        vertical-align: middle;
+    }
 
     .logo .d_none{
         width: 130px;
