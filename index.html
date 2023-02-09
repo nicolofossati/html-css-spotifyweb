@@ -22,8 +22,45 @@
 </head>
 <body class="debug">
     <main class="d_flex">
-        <aside class="d_flex sp_between_jc f_column">
-            <nav>
+        <aside>
+            <div class="aside_top d_flex f_column">
+                <div class="logo">Logo</div>
+                <div class="aside_main">
+                    <span>Home</span>
+                    <span>Search</span>
+                    <span>Your</span>
+                </div>
+                <div class="playlist_aside d_flex f_column">
+                    <h2>PLAYLIST</h2>
+                    <span>Crea Playlist</span>
+                    <ul class="playlist_container d_flex f_column">
+                        <li>Playlist 1</li>
+                        <li>Playlist 2</li>
+                        <li>Playlist 3</li>
+                        <li>Playlist 4</li>
+                        <li>Playlist 5</li>
+                        <li>Playlist 6</li>
+                        <li>Playlist 7</li>
+                        <li>Playlist 8</li>
+                        <li>Playlist 9</li>
+                        <li>Playlist 10</li>
+                        <li>Playlist 1</li>
+                        <li>Playlist 2</li>
+                        <li>Playlist 3</li>
+                        <li>Playlist 4</li>
+                        <li>Playlist 5</li>
+                        <li>Playlist 6</li>
+                        <li>Playlist 7</li>
+                        <li>Playlist 8</li>
+                        <li>Playlist 9</li>
+                        <li>Playlist 10</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!--<nav>
                 <ul>
                     <li>Logo <span class="d_none">ECCOMI</span></li>
                     <li>Home <span class="d_none">ECCOMI</span></li>
@@ -34,7 +71,7 @@
                 <div class="aside_playlist d_none">
                 
                 </div>
-            </nav>
+            </nav> -->
             <div class="aside_bottom">
                 <div>Download <span class="d_none">ECCOMI</span></div>
                 <div>Profile <span class="d_none">ECCOMI</span></div>
@@ -144,25 +181,40 @@
         </div>
     </main>
 
-    <footer class="d_flex sp_between_jc ">
-        <div class="footer_left">
+    <footer class="d_flex sp_between_jc center_ai">
+        <div class="footer_left d_flex sp_between_jc">
             <div class="song_cover"></div>
-            <div class="song_container">
+            <div class="song_container d_flex f_column">
                 <span class="song_title">title</span>
                 <span class="song_artist">artist</span>
             </div>
-            <div class="song_actions">
+            <div class="song_actions d_flex f_column">
                 <div class="like">Like</div>
                 <div class="folder">Folder</div>
             </div>
         </div>
 
-        <div class="footer_center">
-            
+        <div class="footer_center d_flex f_column">
+            <div class="song_player d_flex sp_between_jc">
+                <div class="shuffle"></div>
+                <div class="previous"></div>
+                <div class="play"></div>
+                <div class="next"></div>
+                <div class="repeat"></div>
+            </div>
+
+            <div class="progress_player d_flex sp_between_jc">
+                <span>current</span>
+                <div>bars</div>
+                <span>end</span>
+            </div>
         </div>
 
-        <div class="footer_right">
-
+        <div class="footer_right d_flex sp_between_jc center_ai">
+            <div class="order"></div>
+            <div class="device"></div>
+            <div class="volume"></div>
+            <div class="volume_bar"></div>
         </div>
     </footer>
 </body>

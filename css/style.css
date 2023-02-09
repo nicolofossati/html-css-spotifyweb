@@ -41,7 +41,7 @@
 
 .debug .aside_bottom div{
     height: 30px;
-    background-color: #FFF;
+    /*background-color: #FFF;*/
 }
 
 .debug .aside_playlist{
@@ -73,13 +73,40 @@
     border-radius: 50%;
 }
 
-.debug footer div{
-    width: 100px;
+.debug footer > div {
+    width: 150px;
     background-color: #D2D2D2;
 }
 
-.debug .footer_left{
-    
+.debug .footer_left .song_cover {
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+}
+
+.debug .song_player > div{
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+}
+
+.debug .progress_player > span{
+    width: 20px;
+    height: 20px;
+    background-color: #8f8f8f;
+}
+
+.debug .footer_right > div{
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+}
+
+.debug .aside_top{
+    background-color: blueviolet;
+}
+.debug .aside_bottom{
+    background-color: rgb(63, 194, 255);
 }
 
 /* UTILITIES */
@@ -87,7 +114,6 @@
 .white{
     color: var(--white);
 }
-
 
 .d_flex{
     display: flex;
@@ -163,10 +189,6 @@ footer{
     height: 100px;
 }
 
-aside{
-    width: 70px;
-}
-
 .container{
     width: calc(100% - 70px);
 }
@@ -195,6 +217,33 @@ aside{
     width: 100%;
     aspect-ratio: 1/1;
 }
+
+
+/*  ASIDE RULES  */
+
+aside{
+    width: 70px;
+    overflow-y: hidden;
+}
+
+.aside_top{
+    height: calc(100% - 80px);
+    min-height: 400px;
+    overflow-y: hidden;
+}
+
+.aside_bottom{
+    height: 80px;
+}
+
+.playlist_container{
+    overflow-y: scroll;
+}
+
+.playlist_aside{
+    overflow-y: hidden;
+}
+
 
 
 /* MEDIA QUERY */
