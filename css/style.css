@@ -398,7 +398,7 @@ footer .footer_center{
     filter: opacity(0);
 }
 
-.margin_content nav ul li:hover .bordr{
+.margin_content nav ul li:first-child .bordr{
     filter: opacity(1);
 }
 
@@ -452,7 +452,7 @@ aside{
 
 @media screen and (min-width: 576px) {
     aside{
-        width: 300px;
+        width: 200px;
     }
 
     .d_none{
@@ -461,6 +461,10 @@ aside{
 
     .d_mobile{
         display: none;
+    }
+
+    .container{
+        width: calc(100% - 200px);
     }
 
     .d_none_playlist > *{
@@ -544,7 +548,7 @@ aside{
     }
 
     .cta{
-        width: calc(100% - 300px);
+        width: calc(100% - 200px);
     }
 
     .song_descr{
