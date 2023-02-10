@@ -213,9 +213,10 @@ footer{
     border: 1px var(--white) solid;
     border-radius: 20px;
     color: var(--white);
-    margin-right: 10px;
+    margin-right: 20px;
     font-size: 15px;
     font-weight: 600;
+    transition: transform .2s;
 }
 
 .container nav ul li{
@@ -465,6 +466,13 @@ aside{
 .aside_main > div {
     height: 35px;
 }
+
+.bttn:hover {
+    transform: scale(1.15);
+}
+
+
+
 /* MEDIA QUERY */
 
 
