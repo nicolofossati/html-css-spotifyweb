@@ -330,6 +330,7 @@ footer .footer_center{
     position: absolute;
 }
 
+
 .bar_progress_container_foot{
     background-color: var(--opaque_grey);
     width: 60px;
@@ -347,6 +348,15 @@ footer .footer_center{
     background-color: var(--extra_light_grey);
     position: absolute;
 }
+
+.bar_progress_container:hover .bar_progress{
+    background-color: var(--spotify_green);
+}
+
+.bar_progress_container_foot:hover .bar_progress_foot{
+    background-color: var(--spotify_green);
+}
+
 
 .footer_right> div{
     margin-right: 8px;
@@ -389,6 +399,24 @@ footer .footer_center{
     border-radius: 50%;
 }
 
+.progress_circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--extra_light_grey);
+    right: 0;
+    top: -5px;
+    position: absolute;
+    display: none;
+}
+
+.bar_progress_container:hover .progress_circle{
+    display: block;
+}
+
+.bar_progress_container_foot:hover .progress_circle{
+    display: block;
+}
 
 /*  FONTS RULES   */
 .small_light_grey{
