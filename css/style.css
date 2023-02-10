@@ -15,6 +15,7 @@
     --grey: #65686D;
     --dark_grey: #282828;
     --opaque_grey: #93939372;
+    --spotify_green: #ADFF2F;
 }
 
 /* DEBUG */
@@ -294,7 +295,7 @@ footer .footer_center{
     padding: 0 10px;
 }
 
-.song_container span:first-child{
+.song_title{
     color: var(--white);
     font-size: 15px;
     font-weight: bolder;
@@ -388,6 +389,19 @@ footer .footer_center{
 .footer_right> div{
     margin-right: 8px;
 }
+
+.bordr {
+    width: 30px;
+    margin: auto;
+    background-color: var(--spotify_green);
+    height: 5px;
+    filter: opacity(0);
+}
+
+.margin_content nav ul li:hover .bordr{
+    filter: opacity(1);
+}
+
 
 /*  FONTS RULES   */
 .small_light_grey{
@@ -531,6 +545,14 @@ aside{
 
     .cta{
         width: calc(100% - 300px);
+    }
+
+    .song_descr{
+        flex-direction: row;
+    }
+
+    .song_descr span:first-child{
+        padding-right: 7px;
     }
     
 }
