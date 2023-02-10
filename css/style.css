@@ -204,8 +204,8 @@ footer{
 }
 
 .aside_main img{
-    color: var(--light_grey);
     width: 30px;
+    filter: brightness(0.6);
 }
 
 .bttn{
@@ -467,11 +467,30 @@ aside{
     height: 35px;
 }
 
+
+.container nav ul li:hover{
+    color: var(--white);
+}
+
 .bttn:hover {
     transform: scale(1.15);
 }
 
+.aside_main > div:hover img{
+    filter: brightness(1);
+}
 
+.aside_main > div:hover span{
+    color: var(--white);
+}
+
+.new_playlist_container:hover > * {
+    color: var(--white);
+}
+
+.playlist_container li:hover{
+    color: var(--white);
+}
 
 /* MEDIA QUERY */
 
