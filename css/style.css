@@ -10,18 +10,14 @@
     --black: #000;
     --white: #FFF;
     --dark_blue: #141922;
-    --light_grey: #D2D2D2;
+    --extra_light_grey: #d8d8d8;
+    --light_grey: #939393;
     --grey: #65686D;
     --dark_grey: #282828;
+    --opaque_grey: #93939372;
 }
 
 /* DEBUG */
-
-
-.debug footer{
-    background-color: #282828;
-}
-
 
 .debug .content{
     background-color: #141922;
@@ -39,15 +35,10 @@
     border-radius: 50%;
 }
 
+/*
 .debug footer > div {
     width: 150px;
     background-color: #D2D2D2;
-}
-
-.debug .footer_left .song_cover {
-    width: 30px;
-    height: 30px;
-    background-color: aqua;
 }
 
 .debug .song_player > div{
@@ -68,6 +59,7 @@
     background-color: #FFF;
 }
 
+*/
 
 /* UTILITIES */
 
@@ -151,6 +143,7 @@ main{
 
 footer{
     height: 100px;
+    background-color: #282828;
 }
 
 .container{
@@ -224,6 +217,16 @@ footer{
     background-size: cover;
 }
 
+#popolar .cards .card:first-child .cover{
+    background-image: url('../img/youg.jpeg');
+    background-size: cover;
+}
+
+#popolar .cards .card:nth-child(2n) .cover{
+    background-image: url('../img/einaudi.jpeg');
+    background-size: cover;
+}
+
 .logo .d_mobile{
     width: 35px;
 }
@@ -267,13 +270,130 @@ section h3{
     color: var(--white);
 }
 
+.footer .footer_left, .footer .footer_right{
+    width: 155px;
+}
 
+footer .footer_center{
+    width: 40%;
+    padding: 0 10px;
+}
+
+.footer_left .song_cover {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/sinister.jpeg);
+    background-size: cover;
+}
+
+.footer_left{
+    padding-left: 10px;
+}
+
+.song_container {
+    padding: 0 10px;
+}
+
+.song_container span:first-child{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.song_container .small_light_grey{
+    font-weight: 600;
+}
+
+.song_actions i{
+    color: var(--light_grey);
+}
+
+.song_player {
+    max-width: 180px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.song_player i, .footer_right i{
+    color: var(--white);
+}
+
+.song_player div:nth-child(3n) i{ /* PLAY */
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+.song_player div:nth-child(2n) i, .song_player div:nth-child(4n) i{ /* PLAY */
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.song_player div:first-child i{
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.song_player div:nth-child(5n) i{ /* PLAY */
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.progress_player > span{
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.progress_player > span span{
+    font-size: 8px;
+}
+
+.bar_progress_container{
+    background-color: var(--opaque_grey);
+    width: 100%;
+    height: 5px;
+    margin: 0 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bar_progress{
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: var(--extra_light_grey);
+    position: absolute;
+}
+
+.bar_progress_container_foot{
+    background-color: var(--opaque_grey);
+    width: 60px;
+    height: 5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.bar_progress_foot{
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: var(--extra_light_grey);
+    position: absolute;
+}
+
+.footer_right> div{
+    margin-right: 8px;
+}
 
 /*  FONTS RULES   */
 .small_light_grey{
     font-size: 13px;
     color: var(--light_grey);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 /*  ASIDE RULES  */
