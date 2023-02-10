@@ -16,51 +16,8 @@
     --dark_grey: #282828;
     --opaque_grey: #93939372;
     --spotify_green: #ADFF2F;
+    --opaque_black: #00000054;
 }
-
-/* DEBUG */
-
-.debug .content{
-    background-color: #141922;
-}
-
-.debug .card{
-   /* background-color: #65686D;*/
-}
-
-.debug .cover{
-    background-color: #248264;
-}
-
-.debug #popolar .cover{
-    border-radius: 50%;
-}
-
-/*
-.debug footer > div {
-    width: 150px;
-    background-color: #D2D2D2;
-}
-
-.debug .song_player > div{
-    width: 20px;
-    height: 20px;
-    background-color: #FFF;
-}
-
-.debug .progress_player > span{
-    width: 20px;
-    height: 20px;
-    background-color: #8f8f8f;
-}
-
-.debug .footer_right > div{
-    width: 30px;
-    height: 30px;
-    background-color: #FFF;
-}
-
-*/
 
 /* UTILITIES */
 
@@ -227,6 +184,10 @@ footer{
 #popolar .cards .card:nth-child(2n) .cover{
     background-image: url('../img/einaudi.jpeg');
     background-size: cover;
+}
+
+#popolar .cover{
+    border-radius: 50%;
 }
 
 .logo .d_mobile{
@@ -401,6 +362,31 @@ footer .footer_center{
 
 .margin_content nav ul li:first-child .bordr{
     filter: opacity(1);
+}
+
+.obscure_play{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--opaque_black);
+    position: relative;
+}
+
+.obscure_play i{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+}
+
+.cover:hover .obscure_play{
+    display: block;
+}
+
+#popolar .obscure_play{
+    border-radius: 50%;
 }
 
 
