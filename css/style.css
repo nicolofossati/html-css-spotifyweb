@@ -492,6 +492,27 @@ aside{
     color: var(--white);
 }
 
+.aside_bottom div:first-child span:hover{
+    color: var(--white);
+}
+
+.song_descr:hover span{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.song_actions div i:hover{
+    color: var(--white);
+}
+
+.play{
+    transition: transform .2s;
+}
+
+.play i:hover{
+    transform: scale(1.2);
+}
+
 /* MEDIA QUERY */
 
 
